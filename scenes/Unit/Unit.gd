@@ -39,5 +39,6 @@ func _on_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
 		emit_signal("unitSelected", self)
 
+@warning_ignore("native_method_override")
 func get_class():
 	return "Unit"
